@@ -1,0 +1,119 @@
+        *{
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: all;
+		}
+
+		header{
+			background-color: #99ff99;
+			padding: 30px;
+			text-align: center;
+  			font-size: 35px;
+  			color: black;
+		}
+
+		.nav {
+  			float: left;
+  			width: 20%;
+  			background: #66ccff;
+  			padding: 20px;
+  			height: 900px;
+		}
+
+		.article {
+  			float: left;
+ 			padding: 20px;
+  			width: 80%;
+  			background-color: #ffffcc;
+  		}
+
+  		section:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
+
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: all;
+		}
+
+		header{
+			background-color:#000000;
+			padding: 0px;
+			text-align: center;
+  			font-size: 35px;
+  			color: blue;
+  			font-weight: bold;  			
+  			font-variant: normal;
+  			height: 80px;
+		}
+
+		nav {
+  			float: left;
+  			width: 100%;
+  			background: #e5ffe5;
+  			padding: 20px;
+  			height: 500px;
+		}
+
+  		section:break-after{
+  			content: "";
+  			display: table;
+  			clear: both;
+  			background-color: 	#e5ffe5;
+		}
+
+		form :active {
+ 			color: red;
+		}
+
+
+
+			fieldset{
+				height: 90%;
+				width: 90%;
+				font-family: sans-serif;
+			}
+
+			header{
+				font-stretch: ;
+				font-size: 10;
+				font-family: ;
+				font-style: italic;
+			}
+
+			footer{
+				padding-bottom: bold;
+				background color: black;
+			}
+
+			.Hheader{
+				background-color:#000000;
+				padding: 30px;
+				text-align: center;
+	  			font-size: 35px;
+	  			color: white;
+	  			font-weight: bold;
+				font-variant: normal;
+			}
+
+div{
+	color: purple;
+}
+
+#elements{
+	size: 4;
+	color: black;
+}
+body{
+	width: 98%;
+	text-align: center;
+	font-family: sans-serif;
+}
+

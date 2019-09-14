@@ -1,0 +1,212 @@
+        *{
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: cursive;
+
+		}
+
+		header{
+			background-color: #000000;
+			padding: 30px;
+			text-align: center;
+  			font-size: 35px;
+  			color: white;
+		}
+
+		nav {
+  			float: left;
+  			width: 20%;
+  			background: #e6e6e6;
+  			padding: 20px;
+  			height: 900px;
+  			font-family: sans-serif;
+		}
+
+		article {
+  			float: right;
+ 			padding: 20px;
+  			width: 80%;
+  			background-color: transparent;
+  			font-family: cursive;
+  		}
+
+  		section:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
+
+		 a:hover{
+		 	color: white;
+			background-color: black;
+		} 
+
+		.table{
+      align-items: left;
+    }
+
+
+		
+
+label{
+	color: blue;
+}
+
+option{
+	color: red;
+}
+
+span{
+	color: black;
+}
+
+#table{
+	background: white;
+}
+
+#table{
+	text-align : center;
+}
+
+.row{
+	color: yellow;
+}
+
+.cmmn{
+	color: black;
+}
+
+.cmm{
+	color: black;
+}
+
+input[type=radio]{
+	color: red;
+}
+
+div{
+	color: purple;
+}
+
+#listElements{
+	color: red;
+}
+
+#elements{
+	size: 4;
+	color: black;
+}
+body{
+	width: 98%;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+fieldset{
+	text-align: center;
+	width: 30%;
+	alignment-baseline: right;
+}
+
+kbd{
+	background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+}
+
+u {
+    text-decoration: #f00 wavy underline;
+}
+
+		.button{
+		  background-color: #ffffff;
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  font-size: 16px;
+		  border-radius: 12px;
+		  position: relative;
+		  display: inline-block;
+		  padding: 0.618rem 1.618rem;
+		  cursor: pointer;
+		  color: #FFF;
+		  letter-spacing: 1px;
+		  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+		  background:#0066cc none repeat scroll 0% 0%;
+		  border: 1px solid #ffffcc;
+		  border-radius: 4px;
+		  box-shadow:
+		    0 1px 0 rgba(255, 255, 255, 0.25),
+		    0 1px 0 rgba(255, 255, 255, 0.25) inset,
+		    0 0 0 rgba(0, 0, 0, 0.5) inset,
+		    0 1.25rem 0 rgba(255, 255, 255, 0.08) inset,
+		    0 -1.25rem 1.25rem rgba(0, 0, 0, 0.3) inset,
+		    0 1.25rem 1.25rem rgba(255, 255, 255, 0.1) inset;
+
+		  transition: all 0.1s linear 0s;
+		  margin: 0.618rem;
+		}
+
+		.button:hover,
+		.button:focus {
+		  text-decoration: none;
+		  box-shadow:
+		    0 2px 5px rgba(0, 0, 0, 0.5),
+		    0 1px 0 rgba(255, 255, 255, 0.25) inset,
+		    0 0 0 rgba(0, 0, 0, 0.25) inset,
+		    0 20px 0 rgba(255, 255, 255, 0.03) inset,
+		    0 -20px 20px rgba(0, 0, 0, 0.15) inset,
+		    0 20px 20px rgba(255, 255, 255, 0.05) inset;
+		}
+		.button:active {
+		  box-shadow:
+		    0 1px 0 rgba(255, 255, 255, 0.25),
+		    0 1px 0 rgba(255, 255, 255, 0) inset,
+		    0 0 5px rgba(0, 0, 0, 0.5) inset,
+		    0 20px 0 rgba(255, 255, 255, 0.03) inset,
+		    0 -20px 20px rgba(0, 0, 0, 0.15) inset,
+		    0 20px 20px rgba(255, 255, 255, 0.05) inset;
+		}
+
+		.button::before {
+		  content: "";
+		  display: block;
+		  position: absolute;
+		  background:-moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+		  /*background:-webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+le>
+		  background:linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);*/
+		  padding: x 12px;
+		  top: 0;
+		  left: 15%;
+		  height: 1px;
+		  width: 40%;
+		  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
+		  transition: all 0.3s ease-in-out 0s;
+		}
+
+		.button:active::before {
+		  opacity: 0;
+		}
+		.button:hover::before {
+		  left: 95%;
+	}
+
+.table{
+	width: 963px;
+}
+a:hover{
+      color: white;
+      background-color: black;
+  }
