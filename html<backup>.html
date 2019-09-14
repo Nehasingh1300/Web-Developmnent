@@ -1,0 +1,984 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+	<title>HTML Course</title>
+	<link rel="stylesheet" href="stylesheet/ss1.css">
+	<meta charset="utf-8" name="Neha Singh" content="HTML Course">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: all;
+		}
+
+		header{
+			background-color: #99ff99;
+			padding: 30px;
+			text-align: center;
+  			font-size: 35px;
+  			color: black;
+		}
+
+		nav {
+  			float: left;
+  			width: 20%;
+  			background: #66ccff;
+  			padding: 20px;
+  			height: 900px;
+		}
+
+		article {
+  			float: left;
+ 			padding: 20px;
+  			width: 80%;
+  			background-color: #ffffcc;
+  		}
+
+  		section:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>HTML</h1>
+	</header>
+	
+
+	<section>
+  <nav>
+    <h2><a href="home.html">HOME</a></h2>
+    <h2><a href=#>Github</a></h2>
+    <h2><a href="Linux1.html">Linux Commands</a></h2>
+    <h2><a href="html.html">HTML</a></h2>
+    <h2><a href=#>CSS</a></h2>
+    <h2><a href="azureCloud.html">Azure</a></h2>
+    <h2><a href="Kubernetes Through Azure [Basics].html">Kubernetes Through Azure [Basics]</a></h2>
+  </nav>
+
+  <article>
+  	<span>
+		Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.<br>
+
+Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.<br><br>
+
+<strong>What are Tags and Attributes?<br></strong>
+Tags and attributes are the basis of HTML.<br><br>
+
+They work together but perform different functions – it is worth investing 2 minutes in differentiating the two.<br><br>
+
+<strong>What Are HTML Tags?<br></strong>
+Tags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets. An example of a tag is: &lth1&gt.<br>
+
+Most tags must be opened &lth1&gt and closed &lt/h1&gt in order to function.<br><br>
+
+<strong>What are HTML Attributes?<br></strong>
+Attributes contain additional pieces of information. Attributes take the form of an opening tag and additional info is placed inside.<br>
+
+An example of an attribute is:<br>
+
+&ltimg src="mydog.jpg" alt="A photo of my dog."&gt<br>
+
+In this instance, the image source (src) and the alt text (alt) are attributes of the &ltimg&gt tag.<br><br>
+
+<strong><h3>Golden Rules To Remember</h3></strong>
+<ol>
+	<li>
+		The vast majority of tags must be opened (&lttag&gt) and closed (&lt/tag&gt) with the element information such as a title or text resting between the tags.
+	</li>
+
+	<li>
+		When using multiple tags, the tags must be closed in the order in which they were opened. For example: <br>
+		&ltstrong&gt&ltem&gtThis is really important!&lt/em&gt&lt/strong&gt
+	</li>
+</ol>
+	</span>
+
+	<h2>
+		Notes To Remember
+	</h2>
+	<p>
+		<ol>
+			<li>
+				<strong>Main Root</strong>
+				<br>The HTML &lthtml&gt element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.
+			</li>
+			<li>
+				<strong>&lt!DOCTYPE&gt</strong><br>
+				The &lt!DOCTYPE&gt declaration must be the very first thing in your HTML document, before the &lthtml&gt tag. The &lt!DOCTYPE&gt declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML (here in document type) the page is written in.
+			</li><br>
+
+
+			<li>
+				<strong>Head</strong><br>
+				The &lthead&gt element is a container for all the head elements.<br>
+
+				The &lthead&gt element can include a title for the document, scripts, styles, meta information, and more.
+
+				The following elements can go inside the &lthead&gt element:
+
+				<table width="70%" border="" cellspacing="3" cellpadding="3" id="table" align="center">
+					<tr>
+						<td>
+							<strong>&lttitle&gt </strong>
+						</td>
+						<td>
+							The &lttitle&gt tag is required in all HTML documents and it defines the title of the document.<br>
+							The &lttitle&gt element:
+							<ol>
+								<li>
+									defines a title in the browser toolbar
+								</li>
+								<li>
+									provides a title for the page when it is added to favorites
+								</li>
+								<li>
+									displays a title for the page in search-engine results
+								</li>
+							</ol>
+							
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>&ltstyle&gt </strong>
+						</td>
+						<td>
+							Inside the &ltstyle&gt element you specify how HTML elements should render in a browser.<br>
+							Each HTML document can contain multiple &ltstyle&gt tags.<br>
+							Other than style tag, we can make style sheet using CSS.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>&ltbase&gt </strong>
+						</td>
+						<td>
+							The HTML &ltbase&gt tag is used to specify a base URI, or URL, for relative links. For example, you can set the base URL once at the top of your page, then all subsequent relative links will use that URL as a starting point.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>&ltlink&gt </strong>
+						</td>
+						<td>
+							The &ltlink&gt tag defines a link between a document and an external resource.<br>
+							The &ltlink&gt tag is used to link to external style sheets.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>&ltmeta&gt </strong>
+						</td>
+						<td>
+							Specifying Keywords<br>
+							Document Description<br>
+							Document Revision Date<br>
+							Document Refreshing<br>
+							Page Redirection<br>
+							Setting Author Name<br>
+							Specify Character Set<br>							
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>&ltscript&gt </strong>
+						</td>
+						<td>
+							...
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>&ltnoscript&gt </strong>
+						</td>
+						<td>
+							...
+						</td>
+					</tr>
+					
+				</table>
+				
+			</li>
+<br>
+			<li>
+				<strong>Body</strong><br>
+				<span>
+					The &ltbody&gt tag defines the document's body.<br>
+					The &ltbody&gt element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.
+
+					<table width="70%" border="" cellspacing="3" cellpadding="3" id="table" align="center" >
+						<tr>
+							<td><strong>Link</strong></td>
+							<td>
+								The HTML External Resource Link element (&ltlink&gt) specifies relationships between the current document and an external resource. This element is most commonly used to link to stylesheets, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things.<br><br>
+
+								<strong >Example:</strong><br>
+								&ltlink rel="stylesheet" href="stylesheet/ss1.css"&gt, this links style sheet through its path to the current sheet.
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>Style</strong>
+							</td>
+							<td>*It can be used in both head & body.<br>*Separate style for website attributes.<br><br>
+								<strong>Example:</strong><br>
+								&ltstyle&gt<br>
+									*{<br>
+										box-sizing: border-box;<br>
+									}<br>
+								This changes the box into box wiht borders. 
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>article</strong>
+							</td>
+							<td>
+								The HTML &ltarticle&gt element represents a self-contained composition in a document, page, application, or site<br><br>
+								<strong>Example:</strong><br>
+								article {<br>
+  									float: left;<br>
+ 									padding: 20px;<br>
+  									width: 80%;<br>
+  									background-color: #ffffcc;<br>
+  								}<br>
+  								This separates the paragraph to left side with padding, width and with particular background color. 
+
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>address</strong>
+							</td>
+							<td>
+								<span>The contact information provided by an &ltaddress&gt element's contents can take whatever form is appropriate for the context, and may include any type of contact information that is needed, such as physical address, URL, email address, phone number, social media handle, geographic coordinates, and so forth. </span><br><br>
+
+								<strong>Example:</strong><br>
+								&ltaddress&gt<br>
+ 								&lta href="mailto:ehasin@gmail.com">ehasin@gmail.com&lt/a&gt <br> 
+ 								&lta href="tel:+916396050579">(91) 63960-50579&lt/a&gt<br>
+								&lt/address&gt<br>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>Aside</strong>
+							</td>
+							<td>
+								Asides are frequently presented as sidebars or call-out boxes.<br>
+								The &ltaside&gt tag defines some content aside from the content it is placed in.The aside content should be related to the surrounding content.
+								
+								<br><br>
+								<strong>Example:</strong><br>
+								&ltaside style="color:blue;font-style:italic;float:right; width:13px"&gt<br>
+								HELLO! Here you will study about HTML.<br>
+								&lt/aside&gt<br>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>Header</strong>
+							</td>
+							<td>
+								<span>
+									The HTML &ltheader&gt element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.<br>
+									<br>
+									<strong>Example:</strong><br>
+									&ltheader&gt<br>
+									&lth1&gtHTML&lth1&gt<br>
+									&lt/header&gt<br>
+								</span>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="headings(h1,h2,h3,h4,h5,h6)">h1,h2,h3,h4,h5,h6</abbr></strong>
+							</td>
+							<td>
+								The HTML &lth1&gt–&lth6&gt elements represent six. levels of section headings. &lth1&gt is the highest section level and &lth6&gt is the lowest.<br><br><br>
+								<ul>
+									<li>
+										&lth1&gth1&lth1/&gt-<h1>h1</h1>
+									</li>
+									<li>
+										&lth2&gth2&lth2/&gt-<h2>h2</h2>
+									</li>
+									<li>
+										&lth3&gth3&lth3/&gt-<h3>h3</h3>
+									</li>
+									<li>
+										&lth4&gth4&lth4/&gt-<h4>h4</h4>
+									</li>
+									<li>
+										&lth5&gth5&lth5/&gt-<h5>h5</h5>
+									</li>
+									<li>
+										&lth6&gth6&lth6/&gt-<h6>h6</h6>
+									</li>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="heading group">hgroup</abbr></strong>
+							</td>
+							<td>
+								<span>
+									The HTML &lthgroup&gt tag is used for defining the heading of an HTML document or section. More specifically, it is used to group a set of &lth1&gt-&lth&gt elements when the heading has multiple levels, such as subheadings, alternative titles, or taglines.
+								</span><br><br>								
+								<strong>example:</strong><br>
+								&lth1&gtTalking Dogs&lt/h1&gt<br>
+								&lth2&gtHumans aren't the only talkers!&lt/h2&gt<br>
+								&lt/hgroup&gt<br>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="navigation">nav</abbr></strong>
+							</td>
+							<td>
+								The HTML &ltnav&gt element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.<br><br>
+								<strong>Example:</strong><br>
+								&lta href="#top"&gtTop&lt/a&gt
+								&lta href="#bottom"&gtBottom&lt/a&gt
+
+								<a href="#top">Top</a><br><br><a href="#bottom">Bottom</a>
+
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>
+									blockquote
+								</strong>
+							</td>
+							<td>
+								<blockquote>
+    								<p>The change you see here in this block is the change this tag gives you, like a quote you want in your website</p>
+    							</blockquote>
+							<p align="left">
+								The HTML &ltblockquote&gt tag is used for indicating long quotations (i.e. quotations that span multiple lines). It should contain only block-level elements within it, and not just plain text.
+							</p><br>
+							<strong>Example:</strong><br>
+							&ltblockquote&gt<br>
+    								&ltp&gtThe change you see here in this block is the change this tag gives you, like a quote you want in your website&lt/p&gt<br>
+    							&lt/blockquote&gt
+						</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="division element">div</abbr></strong>
+							</td>
+							<td>
+								The HTML Content Division element (&ltdiv&gt) is the generic container for flow content. It has no effect on the content or layout until styled using CSS.<br>
+								As a "pure" container, the &ltdiv&gt element does not inherently represent anything. Instead, it's used to group content so it can be easily styled using the class or id attributes, marking a section of a document as being written in a different language (using the lang attribute), and so on.<br><br>
+
+								<strong>Example:</strong><br>
+								&ltdiv&gt As a "pure" container, the &ltdiv&gt element does not inherently represent anything. Instead, it's used to group content so it can be easily styled using the class or id attributes, marking a section of a document as being written in a different language (using the lang attribute), and so on.&lt/div&gt
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="description list">dl</abbr></strong>
+							</td>
+							<td>
+								The HTML &ltdl&gt element represents a description list. The element encloses a list of groups of terms (specified using the &ltdt&gt element) and descriptions (provided by &ltdd&gt elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).<br><br>
+								<strong>Example:</strong><br>
+								&ltdl&gt
+									&ltdt&gtContent categories&lt/dt&gt<br>
+									&ltdd&gt<br>Flow content, and if the &ltdl&gt element's children include one name-value group, palpable content.<br>&lt/d&gt><br><br>
+
+									&ltdt&gtTag Omission&lt/dt&gt<br>
+									&ltdd&gt<br>None, both the starting and ending tag are mandatory.<br>&lt/dd&gt								</dl>
+
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="describe item in description list">dt</abbr></strong>
+							</td>
+							<td>
+								The HTML &ltdt&gt element specifies a term in a description or definition list, and as such must be used inside a &ltdl&gt element. It is usually followed by a &ltdd&gt element; however, multiple &ltdt&gt elements in a row indicate several terms that are all defined by the immediate next &ltdd&gts element.<br><br>
+								<strong>Example:</strong>/<br>
+								&ltdt&gtContent categories&lt/dt&gt<br>
+								&ltdd&gt<br>Flow content, and if the &ltdl&gt element's children include one name-value group, palpable content.<br>&lt/d&gt><br><br>
+
+								&ltdt&gtTag Omission&lt/dt&gt<br>
+								&ltdd&gt<br>None, both the starting and ending tag are mandatory.<br>&lt/dd&gt
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>figure</strong>
+							</td>
+							<td>
+								The HTML &ltfigure&gt (Figure With Optional Caption) element represents self-contained content, potentially with an optional caption, which is specified using the (&ltfigcaption&gt) element. The figure, its caption, and its contents are referenced as a single unit.
+								<figure>
+									<img src="pic/sunset.png" alt="Sunset" width="304" height="180">
+									<figcaption>Sunset</figcaption>
+								</figure>
+								<strong>Example:</strong>
+								&ltfigure&gt
+									&ltimg src="sunset.png" alt="Sunset" width="304" height="280"&gt
+									&ltfigcaption&gtSunset&lt/figcaption&gt
+								&lt/figure&gt
+
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="thematic break">hr</abbr></strong>
+							</td>
+							<td>
+								The HTML &lthr&gt element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.
+
+							<hr>
+
+								The &lthr&gt tag defines a thematic break in an HTML page (e.g. a shift of topic).The &lthr&gt element is used to separate content (or define a change) in an HTML page.<br><br>
+
+								<strong>Example:</strong><br>
+
+								The HTML &lthr&gt element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.<br>
+
+							&lthr&gt<br>
+
+								The &lthr&gt tag defines a thematic break in an HTML page (e.g. a shift of topic).The &lthr&gt element is used to separate content (or define a change) in an HTML page.<br>
+
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="list item">li</abbr></strong>
+							</td>
+							<td>
+								The HTML &ltli&gt element is used to represent an item in a list. It must be contained in a parent element: an ordered list (&ltol&gt), an unordered list (&ltul&gt), or a menu (&ltmenu&gt). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.<br><br>
+								<strong>Example:</strong><br>
+
+								&ltol&gt<br>
+									&ltli&gt<br>
+									&ltstrong&gtMain Root&lt/strong&gt
+									&ltbr&gt<br>The HTML &lthtml&gt element represents the root (top-level element) of an HTML document<br>
+									&lt/li&gt<br><br>
+									&ltli&gt<br>
+									&ltstrong&gt&lt!DOCTYPE&gt&lt/strong&gt&ltbr&gt<br>
+									The &lt!DOCTYPE&gt declaration must be the very first thing in your HTML document<br>
+									&lt/li&gt<br>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="paragraph">p</abbr></strong>
+							</td>
+							<td>
+								The HTML &ltp&gt element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.<br><br>
+
+								<strong>Example:</strong><br>
+								&ltp&gtParagraphs are block-level elements, and notably will automatically close if another block-level element is parsed before the closing tag.<&lt/p&gt
+
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="preformatted text">pre</abbr></strong>
+							</td>
+
+							<td>
+								The HTML &ltpre&gt element represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional ("monospace") font. Whitespace inside this element is displayed as written.<br><br>
+
+								<strong>Example:</strong><br>
+								&ltpre&gt<br>
+						   		hii<br>
+								this..........is...........pre<br>
+								h&lt/pre&gt<br>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="anchor">a</abbr></strong>
+							</td>
+							<td>
+								The HTML <a> element (or anchor element), along with it's href attribute, creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL.<br><br>
+
+								<strong>Example:</strong><br>
+								<a href="home.html">HOME</a><br>
+								&gta href="home.html"&gtHOME&lt/a&gt&ltbr&gt
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="abbreviation"> abbr</abbr></strong>
+							</td>
+							<td>
+								The HTML Abbreviation element (&ltabbr&gt) represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation. If present, title must contain this full description and nothing else.<br><br>
+
+								<strong>Example:</strong><br>
+								<abbr title="Cascading Style Sheets">CSS</abbr>
+								&ltabbr title="Cascading Style Sheets"&gtCSS&lt/abbr&gt
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="boldface">b</abbr></strong>
+							</td>
+							<td>
+								The HTML Bring Attention To element (&ltb&gt)  is used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use &ltb&gt for styling text; instead, you should use the CSS font-weight property to create boldface text, or the &ltstrong&gt element to indicate that text is of special importance.<br><br>
+								<strong>Example:</strong><br>
+								"b" give focus to &ltb&gt<b>word</b>&lt/b&gt.
+
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="Bidirectional Text Override element">bdo</abbr> </strong>
+							</td>
+							<td>
+								The HTML Bidirectional Text Override element (&ltbdo&gt) overrides the current directionality of text, so that the text within is rendered in a different direction.<br><br>
+
+								<strong>Example:</strong><br>
+								<bdo dir="ltr"> this is my name!!!</bdo><br>
+								&ltbdo dir="rtl"&gt this is my name!!!&lt/bdo&gt<br>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="break">br</abbr></strong>
+							</td>
+
+							<td>
+								The HTML <br> element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.<br><br>
+								<strong>Example:</strong><br>
+								hii&ltbr&gt<br>
+								How are you?&ltbr&gt<br>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="code">code</abbr></strong>
+							</td>
+							<td>
+								The HTML &ltcode&gt element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code. By default, the content text is displayed using the user agent's default monospace font.<br><br>
+								<strong>Example:</strong><br>
+								
+								<code>hii</code>,How are you?<br>
+								&ltcode&gthii&lt/code&gt,How are you?&ltbr&gt								
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="data">data</abbr></strong>
+							</td>
+							<td>The HTML &ltdata&gt element links a given content with a machine-readable translation. If the content is time- or date-related, the &lttime&gt element must be used.<br><br>
+							<strong>Example:</strong><br>
+							<ul>
+								<li>
+									<data value="629">top</data>
+								</li>
+							</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="i">i</abbr>
+							</td>
+							<td>
+								The HTML &lti&gt element represents a range of text that is set off from the normal text for some reason. Some examples include technical terms, foreign language phrases, or fictional character thoughts. It is typically displayed in italic type.<br><br>
+								<strong>Example:</strong><br>
+								<i>this is off from normal text!!</i>
+								&lti&gtthis is off from normal text!!&lt/i&gt
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="keyboard input element">kbd</abbr></strong>
+							</td>
+							<td>
+								The HTML Keyboard Input element (&ltkbd&gt) represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device.Remember to set background-color,border-radius,border,box-shadow,color,display,font-size,font-weight,line-height,padding.<br><br>
+								<strong>Example:</strong><br>
+								<kbd>Ctrl</kbd>+<kbd>Z</kbd>, for undo.<br>
+								&ltkbd&gtCtrl&lt/kbd&gt+&ltkbd&gtZ&lt/kbd&gt, for undo.<br>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="strikethrough">s</abbr></strong>
+							</td>
+							<td>
+								The HTML &lts&gt element renders text with a strikethrough, or a line through it. Use the &lts&gt element to represent things that are no longer relevant or no longer accurate. However, &lts&gt is not appropriate when indicating document edits; for that, use the &ltdel&gt and &ltins&gt elements, as appropriate.<br><br>
+								<strong>Example:</strong><br>
+								<s>this is strikethrough.</s><br>
+								&lts&gtthis is strikethrough.&lt/s&gt
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="Sample Element">samp</abbr></strong>
+							</td>
+							<td>
+								The HTML Sample Element (<samp>) is used to enclose inline text which represents sample (or quoted) output from a computer program.<br><br>
+								<strong>Example:</strong><br>
+								<samp>Hii there, you are at right place</samp><br>
+								&ltsamp&gtHii there, you are at right place&lt/samp&gt
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="small">small</abbr></strong>
+							</td>
+							<td>
+								The HTML &ltsmall&gt element makes the text font size one size smaller (for example, from large to medium, or from small to x-small) down to the browser's minimum font size.  In HTML5, this element is repurposed to represent side-comments and small print, including copyright and legal text, independent of its styled presentation.<br><br>
+								<strong>Example:</strong><br>
+								<small>this makes text small!!!</small><br>
+								&ltsmall&gtthis makes text small!!!&lt/small&gt
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="span">span</abbr></strong>
+							</td>
+							<td>
+								The HTML &gtspan&lt element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. &ltspan&gt is very much like a &ltdiv&gt element, but &ltdiv&gt is a block-level element whereas a &ltspan&gt is an inline element.<br><br>
+								<strong>Example:</strong><br>
+								&ltspan&gtthis makes literally no change!!!&lt/span&gt
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>strong</strong>
+							</td>
+							<td>
+								The HTML Strong Importance Element (&ltstrong&gt) indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type.<br><br>
+								<strong>Example:</strong><br>
+								&ltstrong&gtExample:&lt/strong&gt
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="Unarticulated Annotation Element">u</abbr></strong>
+							</td>
+							<td>
+								The HTML Unarticulated Annotation Element (&ltu&gt) represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS;text-decoration:wavy underline<br><br>
+								<strong>Example:</strong><br>
+								<u>this is unarticulate annotation element, as you can see!!</u><br>
+								&ltu&gtthis is unarticulate annotation element, as you can see!!&lt/u&gt
+
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="area">area</abbr></strong>
+							</td>
+							<td>
+								The &ltarea&gt tag defines an area inside an image-map (an image-map is an image with clickable areas).The &ltarea&gt element is always nested inside a &ltmap&gt tag.Note: The usemap attribute in the &ltimg&gt tag is associated with the &ltmap&gt element's name attribute, and creates a relationship between the image and the map.<br><br>
+								<strong>Example:</strong><br><br>
+								&ltimg src="pic/1.png" width="304" height="180" usemap="#songmap"&gt<br>
+								&ltcode&gtclick image to see others photos&lt/code&gt<br>
+								&ltmap name="songmap"&gt<br>
+									&ltarea shape="rectangle" coords="0,0,27,76" href="pic/2.png"&gt<br>
+									&ltarea shape="rectangle" coords="27,76,152,54" href="pic/3.png"&gt<br>
+									&ltarea shape="rectangle" coords="51,228,304,180" href="pic/4.png"&gt<br>
+								&lt/map&gt<br><br>
+
+								<img src="pic/1.png" width="304" height="180" usemap="#songmap"><br>
+								<code>click image to see others photos</code>
+								<map name="songmap">
+									<area shape="rectangle" coords="0,0,27,76" href="pic/2.png">
+									<area shape="rectangle" coords="27,76,152,54" href="pic/3.png">
+									<area shape="rectangle" coords="51,228,304,180" href="pic/4.png">
+								</map>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="embed sound content">audio</abbr></strong>
+							</td>
+							<td>
+								The HTML &ltaudio&gt element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the &ltsource&gt element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a MediaStream.<br><br>
+								<strong>Example:</strong><br>
+								<figure>
+									<audio controls
+												src="pluie_sur_le_toit.mp3">											
+									</audio>
+								</figure><br>
+
+								&ltfigure&gt<br>
+									&ltaudio controls<br>
+												src="pluie_sur_le_toit.mp3"&gt<br>											
+									&lt/audio&gt<br>
+								&lt/figure&gt<br>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="image">img</abbr></strong>
+							</td>
+							<td>
+								&ltimg&gt element; the src attribute is required, and contains the path to the image you want to embed. Screenreaders read the description out to their users so they know what the image shows. You better give specification for size, border of image so that picture is more clear.<br><br>
+								<strong>Example:</strong><br>
+								&ltimg src="pic/sleep.png" border="5px" height="190" width="300"&gt<br><br>
+								<img src="pic/sleep.png" border="5px" height="190" width="300">
+
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>map</strong>
+							</td>
+							<td>
+								The HTML &ltmap&gt element is used with &ltarea&gt elements to define an image map (a clickable link area).<br><br>
+								<strong>Example:</strong><br>
+								&ltimg src="pic/sunset.png" width="304" border="5" height="180" usemap="#songmap"&gt<br>
+								&ltcode&gtclick image to see other photo&lt/code&gt<br>
+								&ltarea shape="rectangle" coords="0,0,270,176" href="pic/1.png"&gt<br>
+								&lt/map><br><br>
+
+
+								<img src="pic/sunset.png" width="304" border="5" height="180" usemap="#songmap"><br>
+								<code>click image to see other photo</code>
+								<map name="songmap">
+									<area shape="rectangle" coords="0,0,270,176" href="pic/1.png">
+								</map>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>video</strong>
+							</td>
+							<td>
+								The HTML Video element (&ltvideo&lt) embeds a media player which supports video playback into the document. You can use &ltvideo&lt for audio content as well, but the &ltaudio&lt element may provide a more appropriate user experience.<br><br>
+								<strong>Example:</strong><br><br>
+								&ltvideo controls width="300" src="samSmith.mp4"&gt<br>	
+								&lt/video&gt<br><br>
+								<video controls width="300" src="samSmith.mp4">	
+								</video><br>
+								<i>This is my favourite song now-a-days!</i>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong><abbr title="embeds external content">embed</abbr></strong>
+							</td>
+							<td>
+								The HTML &ltembed&gt element embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in.<br><br>
+								<strong>Example:</strong><br>
+								&ltembed src="pic/sleep.png" width="300" height="180"&gt<br><br>
+
+								<embed src="pic/sleep.png" width="300" height="180">
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>picture</strong>
+							</td>
+							<td>
+								The HTML &ltpicture&gt element contains zero or more &ltsource&gt elements and one &ltimg&gt element to provide versions of an image for different display/device scenarios. The browser will consider each child &ltsource&gt element and choose the best match among them; if no matches are found, the URL of the &ltimg&gt element's src attribute is selected. The selected image is then presented in the space occupied by the &ltimg&gt element.<br><br>
+								<strong>Example:</strong><br>
+								&ltpicture&gt<br>
+									&ltimg src="pic/3.png" height="180" width="300"&gt<br>
+								&lt/picture&gt<br><br>
+
+								<picture>
+									<img src="pic/3.png" height="180" width="300">
+								</picture>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>source</strong>
+							</td>
+							<td>
+								The HTML &ltsource&gt element specifies multiple media resources for the &ltpicture&gt, the &ltaudio&gt element, or the &ltvideo&gt element. It is an empty element, meaning that it has no content and does not have a closing tag. It is commonly used to serve the same media content in multiple formats supported by different browsers.The &ltsource&gt tag allows you to specify alternative video/audio/image files which the browser may choose from, based on its media type, codec support or media query.<br><br>
+								<strong>Example:</strong><br><br>
+								&ltvideo controls<br>
+    									width="300"<br>
+   										height="200"&gt<br>
+   									&ltsource src="noSound" type="video/mp4"&gt<br>
+									&ltsource src="pluie_sur_le_toit.mp3" type="audio/mp3"&gt<br>
+								&lt/video&gt<br><br>
+
+								<video controls
+    									width="350"
+   										height="200">
+   									<source src="noSound.mp4" type="video/mp4">
+									<source src="pluie_sur_le_toit.mp3" type="audio/mp3">
+								</video>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong>del</strong>
+							</td>
+							<td>
+								The HTML &ltdel&gt element represents a range of text that has been deleted from a document. This can be used when rendering "track changes" or source code diff information, for example. The &ltins&gt element can be used for the opposite purpose: to indicate text that has been added to the document.<br><br>
+								<strong>Example:</strong><br>
+								&ltblockquote&gt<br>
+    								There is &ltdel&gt nothing&lt/del&gt &ltins&gtno code&lt/ins&gt either good or bad, but &ltdel&gtthinking&lt/del&gt &ltins&gtrunning it&lt/ins&gt makes it so.<br>
+								&lt/blockquote&gt<br><br>
+								<blockquote>
+    								There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.
+								</blockquote>
+							</td>
+						</tr>
+
+						<tr>
+							<td><strong>caption,tr,th,td,<br>table,thead,tbody</strong></td>
+							<td>
+								The HTML Table Caption element (<strong>&ltcaption&lt</strong>) specifies the caption (or title) of a table, and if used is always the first child of a &Lttable&gt. Its styling and physical position relative to the table may be changed using the CSS caption-side and text-align properties.<br><br>
+								The HTML <strong>&lttr&gt</strong> element defines a row of cells in a table. The row's cells can then be established using a mix of &lttd&gt (data cell) and &ltth&gt (header cell) elements.<br><br>
+								The HTML <strong>&ltth&gt</strong> element defines a cell as header of a group of table cells. The exact nature of this group is defined by the scope and headers attributes.<br><br>
+								The HTML <strong>&lttd&gt</strong> element defines a cell of a table that contains data. It participates in the table model.<br><br>
+								The HTML <strong>&lttable&gt</strong> element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.<br><br>
+								<strong>Example:</strong><br>
+								The HTML Table Body element (<strong>&lttbody&gt</strong>) encapsulates a set of table rows (&lttr&gt elements), indicating that they comprise the body of the table (&lttable&gt).<br><br>
+								The HTML <strong>&ltthead&gt</strong> element defines a set of rows defining the head of the columns of the table.<br><br>
+								&lttable width="30%" border="" cellspacing="3" cellpadding="3" id="table" align="center"&gt
+								    &ltcaption&gtHe-Man and Skeletor facts&lt/caption&gt<br>
+								    &ltthead&gt<br>
+									    &lttr&gt<br>
+      									&lttd&gt &lt/td&gt<br>
+							        &ltth scope="col" class="heman"&gtHe-Man&lt/th&gt<br>
+   								    &ltth scope="col" class="skeletor"&gtSkeletor&lt/th&gt<br>
+									    &lt/tr&gt<br>
+									&ltt/head&gt<br>
+									&ltttbody&gt<br>
+    									&lttr&gt<br>
+    								    &ltth scope="row"&gtRole&lt/th&gt<br>
+    								    &lttd&gtHero&lt/td&gt<br>
+    								    &lttd&gtVillain&lt/td&gt<br>
+    								&lt/tr&gt<br>
+    								&lttr&gt<br>
+    								    &ltth scope="row"&gtWeapon&lt/th&gt<br>
+    								    &lttd&gtPower Sword&lt/td&gt<br>
+   									    &lttd&gtHavoc Staff&lt/td&gt<br>
+    								&lt/tr&gt<br>
+    								&lttr&gt<br>
+    								    &ltth scope="row"&gtDark secret&lt/th&gt<br>
+    								    &lttd&gtExpert florist&lt/td&gt<br>
+    								    &lttd&gtCries at romcoms&lt/td&gt<br>
+    								&lt/tr&gt<br>
+    								&ltt/body&gt<br>
+									&lt/table&lt<br><br>
+
+
+									<table width="30%" border="" cellspacing="3" cellpadding="3" id="table" align="center">
+    								<caption><strong>He-Man and Skeletor facts</strong></caption>
+   									<thead>
+   										<tr>
+       									<td> </td>
+        								<th scope="col" class="heman">He-Man</th>
+        								<th scope="col" class="skeletor">Skeletor</th>
+        								</tr>
+        							</thead>
+    								<tbody>
+    								<tr>	
+        								<th scope="row">Role</th>
+        								<td>Hero</td>
+        								<td>Villain</td>
+
+    								</tr>
+    								<tr>
+        								<th scope="row">Weapon</th>
+        								<td>Power Sword</td>
+        								<td>Havoc Staff</td>
+    								</tr>
+    								<tr>
+        								<th scope="row">Dark secret</th>
+        								<td>Expert florist</td>
+        								<td>Cries at romcoms</td>
+    								</tr>
+    								</tbody>
+									</table>
+								</td>
+						</tr>
+
+						<tr>
+							<td>
+								<strong></strong>
+							</td>
+						</tr>
+
+					</table>
+				</span>
+			</li>
+
+
+		</ol>
+
+
+	</p>
+
+
+</article>
+</section>
+
+</body>
+
+<footer>
+	<p>Contact the author of this page:</p>
+
+<address>
+  <a href="mailto:1300nehasingh@gmail.com">1300nehasingh@gmail.com</a><br>
+  <a href="tel:+916396050579">(91) 63960-50579</a>
+</address><br>
+	<small>&copy: 2019 All rights are reserved!</small></footer>
+
+</html>

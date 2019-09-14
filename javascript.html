@@ -1,0 +1,162 @@
+<html>
+	<head>
+		<title>javascript</title>
+	  	<meta charset="utf-8" name="Neha Singh" content="HTML Course">
+	    <link rel="stylesheet" href="stylesheet/ss1.css">
+	    <style type="text/css">
+	    	article{
+	    		font-family: sans-serif;
+	    	}
+	    </style>
+	</head>
+
+	<body>
+		<header>
+			<h1>Java Script Course</h1>
+	    </header>
+	<section>
+
+		<nav>
+		    <h2><a href="home.html">HOME</a></h2>
+		    <h2><a href=#>Github</a></h2>
+		    <h2><a href="Linux1.html">Linux Commands</a></h2>
+		    <h2><a href="html.html">HTML</a></h2>
+		    <h2><a href=#>CSS</a></h2>
+		    <h2><a href="javascript.html">Java script</a></h2>
+		    <h2><a href=#>PHP</a></h2>
+		    <h2><a href=#>Ruby</a></h2>
+		    <h2><a href=#>Python</a></h2>
+		    <h2><a href="azureCloud.html">Azure</a></h2>
+		    <h2><a href="Kubernetes Through Azure [Basics].html">Kubernetes Through Azure [Basics]</a></h2>
+		</nav>
+
+		<article>
+		<p>
+			<h3>Defination:</h3> JavaScript is a scripting or programming language that allows you to implement complex things on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.<br>
+			<h3>JavaScript to program the behavior of web pages</h3>
+		</p>
+		<span>
+			<h1>A. getElementById()</h1>
+				<h3>Example:</h3><br>1) Change text
+
+				<p id="demo">JavaScript can change HTML content.</p>
+
+				<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript! This is what javascript can do'">Click Me!</button><br><br>
+
+				2) Change Image<br><img id="myImage" src="pic/Raf/Raf.png" style="width:500px"><br>
+				<button onclick="document.getElementById('myImage').src='pic/Raf/Rafael.png'">Rafael</button><br>
+				<button onclick="document.getElementById('myImage').src='pic/Raf/jafael.png'">Rafael's Family</button><br><br>
+
+				3) Change Style of text<br>	
+				<p id="demo1">JavaScript can change the style of an HTML element.</p><br>
+				<button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Change Size</button><br><br>
+
+				4) Hide elements<br>
+				<p id="demo2">JavaScript can hide HTML elements.</p><br>
+				<button type="button" onclick="document.getElementById('demo2').style.display='none'">Hide!</button><br><br>
+
+				5) Show elements<br>
+				<p id="demo3" style="display:none">Hello JavaScript!</p><br>
+				<button type="button" onclick="document.getElementById('demo3').style.display='block'">Show!</button><br><br>
+
+
+			<h1>B. Function Call</h1>
+				<p id="demo4">This function changes - Function 4</p>
+				<p id="demo5">This function changes - Function 5</p>
+				<p id="demo6">This function changes - Function 6</p>
+				<button type="button" onclick="myfunc1()">Func1 Call</button>
+
+				<script type="text/javascript">
+					function myfunc1(){
+						document.getElementById("demo4").innerHTML="4";
+						document.getElementById("demo5").innerHTML="5";
+						document.getElementById("demo6").innerHTML="6";
+					}
+				</script>
+
+
+			<h1>C. Console Output / Alert </h1>
+			<span>As seen in start of this page!</span>
+				<script type="text/javascript">
+					var message="hola! people";
+					alert(message);
+				</script>
+
+		</span>
+
+		<p>
+			<h2>NOTES:</h2>
+			<ul>
+				<li>
+					<strong>JavaScript Line Length and Line Breaks</strong><br>
+					For best readability, programmers often like to avoid code lines longer than 80 characters.
+					If a JavaScript statement does not fit on one line, the best place to break it is after an operator
+				</li><br>
+				<li>
+					<strong>JavaScript Code Blocks</strong><br>
+					JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.
+					The purpose of code blocks is to define statements to be executed together.
+					One place you will find statements grouped together in blocks, is in JavaScript functions<br>
+				</li><br>
+				<li>
+					<strong>JavaScript Values</strong><br>
+					The JavaScript syntax defines two types of values: Fixed values and variable values.
+					Fixed values are called literals. For eg, 10.01.
+					Variable values are called variables. FOr eg, var x = 6;<br>
+				</li><br>
+				<li>
+					<strong>Comments</strong><br>
+					// for single line comment.<br>
+					/*<br>
+					 for many line comments<br>
+					 ...<br>
+					*/
+				</li><br>
+				<li>
+					<strong>Rules for constructing names for variables (unique identifiers) are:</strong><br>
+ 
+					*Names can contain letters, digits, underscores, and dollar signs.<br>
+					*Names must begin with a letter<br>
+					*Names can also begin with $ and _ (but we will not use it in this tutorial)<br>
+					*Names are case sensitive (y and Y are different variables)<br>
+					*Reserved words (like JavaScript keywords) cannot be used as names<br>
+				</li><br>
+				<li>
+					<strong>Operators</strong>
+					+	Addition
+					-	Subtraction
+					*	Multiplication
+					**	Exponentiation 
+					/	Division
+					%	Modulus (Division Remainder)
+					++	Increment
+					--	Decrement
+					==	equal to
+					===	equal value and equal type
+					!=	not equal
+					!==	not equal value or not equal type
+					>	greater than
+					<	less than
+					>=	greater than or equal to
+					<=	less than or equal to
+					?	ternary operator
+					&&	logical and
+					||	logical or
+					!	logical not
+					&	AND		
+					|	OR		
+					~	NOT	
+					^	XOR	
+					<<	Zero fill left shift	
+					>>	Signed right shift	
+					>>>	Zero fill right shift
+
+				</li><br>
+
+			</ul>
+		</p>
+		</article>
+	</section>
+	</body>
+
+</html>
